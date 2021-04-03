@@ -36,13 +36,12 @@ There is a list of patterns that we were used throughout the code and their usag
 
 ## Screenshots
 
-![Game Progress Screenshot 1](/images/game_process1.png =200x200)]
-![Game Progress Screenshot 2](/images/game_process2.png =200x200)]
-![Game Progress Screenshot 3](/images/game_process3.png =200x200)]
-
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_process1.png" width="400">
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_process2.png" width="400">
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_process3.png" width="400">
 
 ### _Different sizes, different ways..._
-![Game Progress Screenshot 4](/images/game_random_1.png =200x200)]
-![Game Progress Screenshot 5](/images/game_random_2.png =200x200)]
-![Game Progress Screenshot 6](/images/game_random_3.png =200x200)]
-![Game Progress Screenshot 7](/images/game_random_4.png =200x200)]
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_random_1.png" width="400">
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_random_2.png" width="400">
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_random_3.png" width="400">
+<img src="https://github.com/FollowJust/intruder/blob/main/images/game_random_4.png" width="400">
