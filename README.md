@@ -43,7 +43,7 @@ There is a list of patterns that we were used throughout the code and their usag
 
 
 ### _Different sizes, different ways..._
-![Game Progress Screenshot 4](/images/game_random1.png)]
-![Game Progress Screenshot 5](/images/game_random2.png)]
-![Game Progress Screenshot 6](/images/game_random3.png)]
-![Game Progress Screenshot 7](/images/game_random4.png)]
+![Game Progress Screenshot 4](/images/game_random_1.png)]
+![Game Progress Screenshot 5](/images/game_random_2.png)]
+![Game Progress Screenshot 6](/images/game_random_3.png)]
+![Game Progress Screenshot 7](/images/game_random_4.png)]
