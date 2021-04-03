@@ -1,7 +1,6 @@
 # Intruder
 ## _A Simple SFML Game Project_
-
-![Game Screenshot](/images/gamescreen.png =200x200)]
+<img src="https://github.com/FollowJust/intruder/blob/main/images/gamescreen.png" width="200">
 
 This was originally a part of my university coursework, but then I've decided to load post it here.
 
