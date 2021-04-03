@@ -1,3 +1,4 @@
+<img src="url" alt="alt text" width="200" height="200">
 # Intruder
 ## _A Simple SFML Game Project_
 
