@@ -1,8 +1,7 @@
-<img src="url" alt="alt text" width="200" height="200">
 # Intruder
 ## _A Simple SFML Game Project_
 
-![Game Screenshot](/images/gamescreen.png)]
+![Game Screenshot](/images/gamescreen.png = 200x200)]
 
 This was originally a part of my university coursework, but then I've decided to load post it here.
 
@@ -38,13 +37,13 @@ There is a list of patterns that we were used throughout the code and their usag
 
 ## Screenshots
 
-![Game Progress Screenshot 1](/images/game_process1.png)]
-![Game Progress Screenshot 2](/images/game_process2.png)]
-![Game Progress Screenshot 3](/images/game_process3.png)]
+![Game Progress Screenshot 1](/images/game_process1.png = 200x200)]
+![Game Progress Screenshot 2](/images/game_process2.png = 200x200)]
+![Game Progress Screenshot 3](/images/game_process3.png = 200x200)]
 
 
 ### _Different sizes, different ways..._
-![Game Progress Screenshot 4](/images/game_random_1.png)]
-![Game Progress Screenshot 5](/images/game_random_2.png)]
-![Game Progress Screenshot 6](/images/game_random_3.png)]
-![Game Progress Screenshot 7](/images/game_random_4.png)]
+![Game Progress Screenshot 4](/images/game_random_1.png = 200x200)]
+![Game Progress Screenshot 5](/images/game_random_2.png = 200x200)]
+![Game Progress Screenshot 6](/images/game_random_3.png = 200x200)]
+![Game Progress Screenshot 7](/images/game_random_4.png = 200x200)]
