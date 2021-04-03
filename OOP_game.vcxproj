@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C22EF251-9088-4447-B5B1-227E34FC37F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cell\Cell.cpp" />
+    <ClCompile Include="src\characters\Creature.cpp" />
+    <ClCompile Include="src\characters\Player.cpp" />
+    <ClCompile Include="src\characters\Policies\BeatPolicy.cpp" />
+    <ClCompile Include="src\characters\Policies\RobPolicy.cpp" />
+    <ClCompile Include="src\characters\Policies\ShockPolicy.cpp" />
+    <ClCompile Include="src\Characters\Enemy.h" />
+    <ClCompile Include="src\utils\FieldUtility.cpp" />
+    <ClCompile Include="src\utils\LeePathfinder.cpp" />
+    <ClCompile Include="src\utils\LogString.cpp" />
+    <ClCompile Include="src\TurnState/PlayerTurn.cpp" />
+    <ClCompile Include="src\TurnState/EnemyTurn.cpp" />
+    <ClCompile Include="src\field\Field.cpp" />
+    <ClCompile Include="src\items\bomb\BombFactory.cpp" />
+    <ClCompile Include="src\items\bomb\BombItem.cpp" />
+    <ClCompile Include="src\items\Item.cpp" />
+    <ClCompile Include="src\items\ItemFactory.cpp" />
+    <ClCompile Include="src\items\ItemInteraction\ItemInteraction.cpp" />
+    <ClCompile Include="src\items\ItemInteraction\InteractionStrategy.cpp" />
+    <ClCompile Include="src\items\ItemInteraction\TakeEverythingStrategy.cpp" />
+    <ClCompile Include="src\items\jump\JumpFactory.cpp" />
+    <ClCompile Include="src\items\jump\JumpItem.cpp" />
+    <ClCompile Include="src\items\medkit\MedkitFactory.cpp" />
+    <ClCompile Include="src\items\medkit\MedkitItem.cpp" />
+    <ClCompile Include="src\logs\EventPublisher\EventPublisher.cpp" />
+    <ClCompile Include="src\logs\logfile\LogFile.cpp" />
+    <ClCompile Include="src\logs\logger\ConsoleLogger.cpp" />
+    <ClCompile Include="src\logs\logger\FileLogger.cpp" />
+    <ClCompile Include="src\logs\loggerimplementation\MoveLoggerImplementation.cpp" />
+    <ClCompile Include="src\logs\loggerimplementation\ItemLoggerImplementation.cpp" />
+    <ClCompile Include="src\logs\loggerimplementation\FieldLoggerImplementation.cpp" />
+    <ClCompile Include="src\Exceptions\LoadException.cpp" />
+    <ClCompile Include="src\Exceptions\SaveException.cpp" />
+    <ClCompile Include="src\Exceptions\FileException.cpp" />
+    <ClCompile Include="src\Display\CellView.cpp" />
+    <ClCompile Include="src\Display\ItemView.cpp" />
+    <ClCompile Include="src\Display\CreatureView.cpp" />
+    <ClCompile Include="src\Display\Display.cpp" />
+    <ClCompile Include="src\Save\SaveFile\SaveFile.cpp" />
+    <ClCompile Include="src\Save\GameSave\GameSave.cpp" />
+    <ClCompile Include="src\Save\Caretaker\Caretaker.cpp" />
+    <ClCompile Include="src\Save\Memento\Memento.h" />
+    <ClCompile Include="src\Save\Memento\GameMemento.cpp" />
+    <ClCompile Include="src\gamemanager\gamemanager.cpp" />
+    <ClCompile Include="src\command\MoveCommands\MoveUpCommand.cpp" />
+    <ClCompile Include="src\command\MoveCommands\MoveDownCommand.cpp" />
+    <ClCompile Include="src\command\MoveCommands\MoveLeftCommand.cpp" />
+    <ClCompile Include="src\command\MoveCommands\MoveRightCommand.cpp" />
+    <ClCompile Include="src\command\GameCommands\StartMenuCommand.cpp" />
+    <ClCompile Include="src\command\GameCommands\StartGameCommand.cpp" />
+    <ClCompile Include="src\command\GameCommands\EndGameCommand.cpp" />
+    <ClCompile Include="src\command\GameCommands\SaveLoadCommands\SaveGameCommand.cpp" />
+    <ClCompile Include="src\command\GameCommands\SaveLoadCommands\LoadGameCommand.cpp" />
+    <ClCompile Include="src\command\itemCommands\BombCommand.cpp" />
+    <ClCompile Include="src\command\itemCommands\JumpCommand.cpp" />
+    <ClCompile Include="src\controlcenter\controlcenter.cpp" />
+    <ClCompile Include="src\main\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets" Condition="Exists('packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets')" />
+    <Import Project="packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets" Condition="Exists('packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets')" />
+    <Import Project="packages\sfml_system.2.5.1\build\native\sfml_system.targets" Condition="Exists('packages\sfml_system.2.5.1\build\native\sfml_system.targets')" />
+    <Import Project="packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets" Condition="Exists('packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets')" />
+    <Import Project="packages\sfml_window.2.5.1\build\native\sfml_window.targets" Condition="Exists('packages\sfml_window.2.5.1\build\native\sfml_window.targets')" />
+    <Import Project="packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets" Condition="Exists('packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_graphics.redist.2.5.1\build\native\sfml_graphics.redist.targets'))" />
+    <Error Condition="!Exists('packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_system.redist.2.5.1\build\native\sfml_system.redist.targets'))" />
+    <Error Condition="!Exists('packages\sfml_system.2.5.1\build\native\sfml_system.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_system.2.5.1\build\native\sfml_system.targets'))" />
+    <Error Condition="!Exists('packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_window.redist.2.5.1\build\native\sfml_window.redist.targets'))" />
+    <Error Condition="!Exists('packages\sfml_window.2.5.1\build\native\sfml_window.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_window.2.5.1\build\native\sfml_window.targets'))" />
+    <Error Condition="!Exists('packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\sfml_graphics.2.5.1\build\native\sfml_graphics.targets'))" />
+  </Target>
+</Project>
