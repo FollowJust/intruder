@@ -2,7 +2,7 @@
 ## _A Simple SFML Game Project_
 <img src="https://github.com/FollowJust/intruder/blob/main/images/gamescreen.png" width="400">
 
-This was originally a part of my university coursework, but then I've decided to load post it here.
+This was originally a part of my university coursework, but then I've decided to post it here.
 
 - Graphics - [SFML](https://www.sfml-dev.org/)
 - Visual Studio 19
